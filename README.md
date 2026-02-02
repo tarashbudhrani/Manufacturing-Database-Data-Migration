@@ -20,4 +20,3 @@ This project focuses on designing and migrating relational database tables to su
 1. Download or clone this repository:
    ```bash
    git clone https://github.com/tarashbudhrani/Manufacturing-Database-Data-Migration.git
-# Manufacturing-Database-Data-Migration
