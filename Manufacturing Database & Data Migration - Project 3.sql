@@ -502,11 +502,14 @@ select * from MATERIALINVENTORY
 update MATERIALINVENTORY
 set REMAINING_QUANTITY= INITIAL_QUANTITY where REMAINING_QUANTITY is null
 
-select * from employees_raw
+-- employees_raw table does not exist in this migration
+-- Instead, extract distinct inspector names from the DUMMY table
 select * from employees
 
-insert into  employees(FullName, Role)
-select * from employees_raw
+insert into  employees(FullName, [Role])
+select distinct TRIM(InspectorName), 'Inspector'
+from DUMMY
+where InspectorName is not null and TRIM(InspectorName) != ''
 
 select * from employees
 
