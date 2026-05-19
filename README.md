@@ -16,10 +16,6 @@
 ---
 
 
----
-
----
-
 ## 🗂️ Tables
 
 | Table | What it stores |
@@ -62,12 +58,13 @@ ABC_10000  (raw flat file)
 | Quantities with `$` signs and commas | Stripped then cast to `DECIMAL` |
 | Machine names with `P1-` / `P2-` prefixes | Plant ID extracted, prefix stripped |
 
+---
 ## 📐 ER Diagram
 
 <img width="1315" height="822" alt="image" src="https://github.com/user-attachments/assets/5462130a-a8d8-432c-bed5-8fde23574258" />
 
----
 
+---
 
 ## ⚡ Triggers
 
