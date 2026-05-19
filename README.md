@@ -15,19 +15,8 @@
 
 ---
 
-## ✅ Key Wins
-
-- Eliminated data chaos across 10,000+ records by building a full ETL pipeline from a single dirty flat file into 9 normalized tables
-- Blocked material over-consumption by writing a rollback trigger that stops any usage insert pushing stock below zero
-- Prevented 100% of machine double-bookings by enforcing schedule conflict checks at the database level, not the app layer
-- Cut manual QC escalation to zero by auto-flagging production orders as `Rework Required` the moment an inspector logs a failure
 
 ---
-
-## 📐 ER Diagram
-
-<img width="1315" height="822" alt="image" src="https://github.com/user-attachments/assets/5462130a-a8d8-432c-bed5-8fde23574258" />
-
 
 ---
 
@@ -73,7 +62,12 @@ ABC_10000  (raw flat file)
 | Quantities with `$` signs and commas | Stripped then cast to `DECIMAL` |
 | Machine names with `P1-` / `P2-` prefixes | Plant ID extracted, prefix stripped |
 
+## 📐 ER Diagram
+
+<img width="1315" height="822" alt="image" src="https://github.com/user-attachments/assets/5462130a-a8d8-432c-bed5-8fde23574258" />
+
 ---
+
 
 ## ⚡ Triggers
 
